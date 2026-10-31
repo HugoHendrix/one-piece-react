@@ -10,6 +10,8 @@ import robinImage from "../image/robin.png";
 import brookImage from "../image/brook.png";
 import frankyImage from "../image/franky.png";
 import jinbeImage from "../image/jinbe.png";
+import merryImage from "../image/merry.jpg";
+import sunnyImage from "../image/sunny.png";
 
 function CharacterList() {
   const characters = [
@@ -102,17 +104,35 @@ function CharacterList() {
         "Jinbe é o timoneiro dos Chapéus de Palha e o último membro que se juntou ao grupo até o momento. Ele conheceu Luffy em Impel Down e lutou em Marineford para ajudá-lo a salvar Ace. ",
       image: jinbeImage,
     },
+
+    {
+        id: 11,
+        name: "O Going Merry",
+        role: "Merry, o Navio dos Chapéus de Palha",
+        history:
+          "O Going Merry, carinhosamente apelidado de Merry, era o navio dos Chapéus de Palha durante a primeira metade da Grand Line em One Piece. Mais do que um meio de transporte, o Merry era um símbolo da união e do sonho da tripulação, representando a jornada e as aventuras que eles compartilharam. ",
+        image: merryImage,
+      },
+
+      {
+        id: 12,
+        name: "Thousand Sunny",
+        role: "Navio Atual do Bando",
+        history:
+          "O Thousand Sunny é o segundo navio dos Chapéus de Palha em One Piece, substituindo o Going Merry após sua despedida em Water 7. Construído por Franky, o Sunny é uma embarcação tecnológica e poderosa que acompanha a tripulação em suas aventuras pela Grand Line.",
+        image: sunnyImage,
+      },
   ];
 
   return (
     <div className="container pb-5">
-      <h2
+      <h1
         class="mt-5 mb-4"
         aria-label="Bando do Chapéu de Palha (Mugiwara no Ichimi)"
       >
         麦わらの一味 - Mugiwara no Ichimi
-      </h2>
-      <p className="h3 mb-5">(Bando do Chapéu de Palha)</p>
+      </h1>
+      <p className="h5 mb-5">(Bando do Chapéu de Palha)</p>
       <div className="row">
         {characters.map((character) => (
           <div key={character.id} className="col-lg-4 mb-4">
